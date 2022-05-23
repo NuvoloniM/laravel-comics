@@ -57,3 +57,50 @@ header .navbar .nav ul .current a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.comics-section {
+  background-color: #000;
+}
+.comics-section .label {
+  background-color: #0282f9;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  margin-top: -25px;
+  margin-left: 10%;
+  display: inline-block;
+}
+.comics-section .row {
+  width: 80%;
+  margin: 0px auto;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.comics-section .row .card {
+  width: calc(16.6666666667% - 10px);
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+.comics-section .row .card img {
+  width: 100%;
+}
+.comics-section .row .card h4 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.comics-section .btn-container {
+  text-align: center;
+  padding: 20px 0;
+}
+.comics-section .btn-container .load {
+  display: inline-block;
+  background-color: #0282f9;
+  padding: 5px 20px;
+  margin: 0 auto;
+}
+.comics-section .btn-container .load a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}

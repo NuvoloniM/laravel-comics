@@ -1,0 +1,48 @@
+@import './variables';
+
+.comics-section{
+    background-color: #000;
+    .label {
+        background-color: $primary-color;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 5px 10px;
+        margin-top: -25px;
+        margin-left: 10%;
+        display: inline-block;
+    }
+    .row {
+        width: 80%;
+        margin: 0px auto;
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        .card {
+            width: calc((100%/6) - 10px);
+            margin: 0 5px;
+            margin-bottom: 10px;
+            img {
+                width: 100%;
+            }
+            h4 {
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .btn-container{
+        text-align: center;
+        padding: 20px 0;
+        .load {
+            display: inline-block;
+            background-color: $primary-color;
+            padding: 5px 20px;
+            margin: 0 auto;
+            a{
+                color: #fff;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

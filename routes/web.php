@@ -17,7 +17,6 @@ Route::get('/', function (){
     //dopo aver copiato in config il file php con il database dei comics
     //lo trasformo in variabile per poterci lavorare
     $comics = config('comics');
-    dump($comics);
     //oltre a ritornare la pgina comics, ritrono anche la variabile creata
     return view('comics', [ 'comics' => $comics]);
     //gli assegno un name per poterlo richiamare con route()
