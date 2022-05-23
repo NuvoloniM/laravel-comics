@@ -49,3 +49,11 @@ header .navbar .nav ul .current {
 header .navbar .nav ul .current a {
   color: #0282f9;
 }
+
+.hero {
+  height: 40vh;
+  width: 100%;
+  background-image: url("../images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
