@@ -2,9 +2,46 @@
 
 header {
     background-color: $primary-color;
-
-    .container {
+    .row {
         width: 80%;
         margin: 0 auto;
+        .head-menu {  
+            color: #fff;
+            text-align: end;
+            text-transform: uppercase;
+            div {
+                display: inline-block;
+                padding: 5px 10px;
+            }
+        }
+    }
+    .navbar{
+        background-color: #fff;
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav{
+            text-transform: uppercase;
+            ul {
+                list-style: none;
+                li {
+                    display: inline-block;
+                    padding: 10px;
+                    a {
+                        color: #000;
+                        text-decoration: none;
+                        font-size: 0.9em;
+                    }
+                }
+                .current{
+                    a{
+                        color: $primary-color;
+                    }
+                    border-bottom: 2px solid $primary-color;
+                }
+            }
+        }
     }
 }
