@@ -14,9 +14,12 @@
     <!-- main -->
     <main>
 
+        <!-- sezione jumbotron -->
         @include('partials.hero')
-    
+        <!-- seztione del contenuto principale, uso yield perchè varia a seconda della pagina -->
         @yield('content')
+        <!-- sezione link per lo shop -->
+        @include('partials.shop')
     </main>
 
 </body>
