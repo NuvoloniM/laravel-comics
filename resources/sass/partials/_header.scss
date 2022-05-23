@@ -1,0 +1,10 @@
+@import './variables';
+
+header {
+    background-color: $primary-color;
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
