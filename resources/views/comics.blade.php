@@ -25,5 +25,7 @@
             </div>
         </div>
     </div>
+    <!-- sezione link per lo shop -->
+    @include('partials.shop')
     
 @endsection
