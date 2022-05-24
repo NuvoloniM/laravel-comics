@@ -129,40 +129,94 @@ header .navbar .nav ul .current a {
   text-transform: uppercase;
 }
 
-footer {
+.foot-bg {
   background-image: url("../images/footer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-footer .container {
+.foot-bg .container {
   width: 80%;
   margin: 0 auto;
 }
-footer .container .row {
+.foot-bg .container .row {
   display: flex;
   justify-content: space-between;
 }
-footer .container .row .foot-nav {
+.foot-bg .container .row .foot-nav {
   display: flex;
   flex-wrap: wrap;
   width: 60%;
 }
-footer .container .row .foot-nav h3 {
+.foot-bg .container .row .foot-nav h3 {
   color: #fff;
   text-transform: uppercase;
+  padding: 10px 0;
 }
-footer .container .row .foot-nav ul {
+.foot-bg .container .row .foot-nav ul {
   list-style: none;
 }
-footer .container .row .foot-nav ul li a {
+.foot-bg .container .row .foot-nav ul li a {
   color: rgb(85, 83, 83);
   text-decoration: none;
+  line-height: 1.5em;
 }
-footer .container .row .foot-img {
+.foot-bg .container .row .foot-nav ul li a:hover {
+  color: #fff;
+}
+.foot-bg .container .row .foot-nav .mid-menu {
+  margin: 0 30px;
+}
+.foot-bg .container .row .foot-nav .copyright {
+  color: rgb(85, 83, 83);
+}
+.foot-bg .container .row .foot-nav .copyright a {
+  color: #0282f9;
+  text-decoration: none;
+}
+.foot-bg .container .row .foot-img {
   height: 400px;
   background-image: url("../images/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 40%;
+}
+
+.black-bg {
+  background-color: #303030;
+  padding: 20px 0;
+}
+.black-bg .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.black-bg .container .foot-btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #0282f9;
+  display: inline-block;
+}
+.black-bg .container .foot-btn a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.black-bg .container .foot-social {
+  display: flex;
+  align-items: center;
+}
+.black-bg .container .foot-social h3 {
+  color: #0282f9;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+.black-bg .container .foot-social ul {
+  text-decoration: none;
+}
+.black-bg .container .foot-social ul li {
+  display: inline-block;
+  padding: 0 10px;
 }

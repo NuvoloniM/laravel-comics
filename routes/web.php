@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function (){
     //dopo aver copiato in config il file php con il database dei comics
     //lo trasformo in variabile per poterci lavorare
+    //ogni volta che inserisco un file in config conviente lanciare il comando php artisan config:clear
     $comics = config('comics');
     //oltre a ritornare la pgina comics, ritrono anche la variabile creata
     return view('comics', [ 'comics' => $comics]);
