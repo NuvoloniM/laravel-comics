@@ -128,3 +128,41 @@ header .navbar .nav ul .current a {
   color: #fff;
   text-transform: uppercase;
 }
+
+footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer .container {
+  width: 80%;
+  margin: 0 auto;
+}
+footer .container .row {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .row .foot-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+footer .container .row .foot-nav h3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+footer .container .row .foot-nav ul {
+  list-style: none;
+}
+footer .container .row .foot-nav ul li a {
+  color: rgb(85, 83, 83);
+  text-decoration: none;
+}
+footer .container .row .foot-img {
+  height: 400px;
+  background-image: url("../images/dc-logo-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+}

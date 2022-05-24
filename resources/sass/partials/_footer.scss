@@ -1,0 +1,39 @@
+footer {
+    background-image: url('../images/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        .row{
+            display: flex;
+            justify-content: space-between;
+            .foot-nav{
+                display: flex;
+                flex-wrap: wrap;
+                width: 60%;
+                h3{
+                    color: #fff;
+                    text-transform: uppercase;
+                }
+                ul {
+                    list-style: none;
+                    li {
+                        a{
+                            color: rgb(85, 83, 83);
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            .foot-img {
+                height: 400px;
+                background-image: url('../images/dc-logo-bg.png');
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-position: center;
+                width: 40%;
+            }
+        }
+    }
+}

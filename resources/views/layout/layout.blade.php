@@ -22,5 +22,8 @@
         @include('partials.shop')
     </main>
 
+    <!-- Footer -->
+    @include('partials.footer')
+
 </body>
 </html>
