@@ -12,8 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return view('home');
+})->name('home');
 
-Route::get('/', function (){
+Route::get('/comics', function (){
     //dopo aver copiato in config il file php con il database dei comics
     //lo trasformo in variabile per poterci lavorare
     //ogni volta che inserisco un file in config conviente lanciare il comando php artisan config:clear
