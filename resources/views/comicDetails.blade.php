@@ -37,5 +37,69 @@
                 </div>
             </div>
         </div>
+        <div class="details">
+            <div class="container">
+                <div class="row">
+                    <div class="talent">
+                        <h3>Talent</h3>
+                        <div class="details-item">
+                            <div>
+                                Art By:
+                            </div>
+                            <div class="primary-text">
+                                @foreach($comic['artists'] as $artist)
+                                <span>{{ $artist }}</span>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="details-item">
+                            <div>
+                                Written By:
+                            </div>
+                            <div class="primary-text">
+                                @foreach($comic['writers'] as $writer)
+                                    <span>{{ $writer }}</span>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specs">
+                        <h3>Specs</h3>
+                        <div class="details-item">
+                            <div>Series: </div>
+                            <div class="primary-text specs-text"> {{ $comic['series'] }}</div>
+                        </div>
+                        <div class="details-item">
+                            <div>U.S. Price: </div>
+                            <div class="specs-text"> {{ $comic['price'] }}</div>
+                        </div>
+                        <div class="details-item">
+                            <div>On Sale Date</div>
+                            <div class="specs-text"> {{ $comic['sale_date'] }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta">
+                <ul class="container">
+                    <li>
+                        <a href=""> digital comics</a>
+                        <img src=" {{ asset('images/buy-comics-digital-comics.png') }} " alt="">
+                    </li>
+                    <li>
+                        <a href=""> dc merchandise</a>
+                        <img src="{{ asset('images/buy-comics-merchandise.png') }}" alt="">
+                    </li>
+                    <li>
+                        <a href=""> subscription</a>
+                        <img src="{{ asset('images/buy-comics-subscriptions.png') }}" alt="">
+                    </li>
+                    <li>
+                        <a href=""> comic shop locator</a>
+                        <img src="{{ asset('images/buy-comics-shop-locator.png') }}" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 @endsection
