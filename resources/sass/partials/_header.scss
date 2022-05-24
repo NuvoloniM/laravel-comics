@@ -21,6 +21,12 @@ header {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            .current{
+                a{
+                    color: $primary-color;
+                }
+                border-bottom: 2px solid $primary-color;
+            }
         }
         .nav{
             text-transform: uppercase;
@@ -35,11 +41,19 @@ header {
                         font-size: 0.9em;
                     }
                 }
-                .current{
-                    a{
-                        color: $primary-color;
-                    }
-                    border-bottom: 2px solid $primary-color;
+                
+            }
+        }
+        .search{
+            input{
+                background-color: transparent;
+                border: none;
+                border-bottom: 2px solid $primary-color;
+                &:hover{
+                    cursor: pointer;
+                }
+                &::placeholder{
+                    text-align: end;
                 }
             }
         }

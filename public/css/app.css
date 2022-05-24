@@ -28,6 +28,12 @@ header .navbar .row {
   align-items: center;
   justify-content: space-between;
 }
+header .navbar .row .current {
+  border-bottom: 2px solid #0282f9;
+}
+header .navbar .row .current a {
+  color: #0282f9;
+}
 header .navbar .nav {
   text-transform: uppercase;
 }
@@ -43,11 +49,22 @@ header .navbar .nav ul li a {
   text-decoration: none;
   font-size: 0.9em;
 }
-header .navbar .nav ul .current {
+header .navbar .search input {
+  background-color: transparent;
+  border: none;
   border-bottom: 2px solid #0282f9;
 }
-header .navbar .nav ul .current a {
-  color: #0282f9;
+header .navbar .search input:hover {
+  cursor: pointer;
+}
+header .navbar .search input::-moz-placeholder {
+  text-align: end;
+}
+header .navbar .search input:-ms-input-placeholder {
+  text-align: end;
+}
+header .navbar .search input::placeholder {
+  text-align: end;
 }
 
 .hero {

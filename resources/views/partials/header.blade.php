@@ -7,7 +7,7 @@
     </div>
     <div class="navbar">
         <div class="row">
-            <div class="logo">
+            <div class=" logo {{ Request::route()->getName() == 'home' ? 'current' : '' }} ">
                 <a href=" {{ url('/') }} ">
                     <img src="{{ asset('images/dc-logo.png') }}" alt="logo">
                 </a>
@@ -17,7 +17,7 @@
                     <li>
                         <a href="#"> characters</a>
                     </li>
-                    <li class="current">
+                    <li class=" {{ Request::route()->getName() == 'comics' || Request::route()->getName() == 'comicDetails' ? 'current' : '' }} ">
                         <a href="{{ route('comics') }}" > comics</a>
                     </li>
                     <li>
@@ -47,7 +47,7 @@
                 </ul>
             </div>
             <div class="search">
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="Search &#128269;">
             </div>
         </div>
     </div>
