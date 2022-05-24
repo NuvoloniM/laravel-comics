@@ -25,3 +25,26 @@ Route::get('/comics', function (){
     return view('comics', [ 'comics' => $comics]);
     //gli assegno un name per poterlo richiamare con route()
 })->name('comics');
+
+//Rotta per prodotto = show
+//url: localhost:8080/prodotti/1
+//creo una nuova rotta che continua da comics per mostrare il singolo comic selezionato
+//id è un valore dinamico che mi viene passato tramite l'url e che a mia volta passo nella funzione per poterlo utilizzare nella pagina corrente
+Route::get('/comics/{id}', function ($id) {
+
+    $comics = config('comics');
+    // dump($pasta);
+    //validazione parametro
+    if( is_numeric( $id ) && $id < count( $comics ) && $id >= 0 ){
+        // dump($id);
+        //dump( $comics[$id] );
+        //setto variabile singolo fumetto selezionato tramite id dell'array
+        $item = $comics[$id];
+        //ritorno la pagina del comic singolo a cui passo come parametro tutti i dettagli dell'array singolo
+        return view('comicDetails', [ 'comic' => $item ] );
+    } else {
+        abort(404);
+    }
+
+
+})->name('comicDetails');
