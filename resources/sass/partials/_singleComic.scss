@@ -1,0 +1,63 @@
+@import './variables';
+
+
+.comic{
+    .splitter{
+        height: 80px;
+        background-color: $primary-color;
+        padding-inline-start: 10px 0;
+    }
+    .container{
+        width: 65%;
+        margin: 0px auto;
+        .poster {
+            margin-top: -300px;
+        }
+        .row {
+            display: flex;
+            padding-top: 30px;
+            .description{
+                padding: 20px 0;
+                h2{
+                    color: #000;
+                    text-transform: uppercase;
+                    padding-bottom: 20px;
+                }
+                .price-box{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: #55ba59;
+                    border: 1px solid #000;
+                    color: #fff;
+                    padding-right: 10px;
+                    .price {
+                        display: flex;
+                        justify-content: space-between;
+                        color: #c6f5c7;
+                        width: 70%;
+                        border-right: 1px solid #000;
+                        padding: 10px;
+                        span {
+                            color: #fff;
+                        }
+                    }
+                }
+                p {
+                    padding: 10px 0;
+                    line-height: 1.5em;
+                    color: rgb(85, 83, 83);
+                }
+            }
+            .advertisement{
+                padding-left: 10px;
+                h4{
+                    text-transform: uppercase;
+                    text-align: end;
+                    color: rgb(85, 83, 83);
+                }
+            }
+        }
+    }
+}

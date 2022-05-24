@@ -220,3 +220,63 @@ header .navbar .nav ul .current a {
   display: inline-block;
   padding: 0 10px;
 }
+
+.comic .splitter {
+  height: 80px;
+  background-color: #0282f9;
+  -webkit-padding-start: 10px 0;
+          padding-inline-start: 10px 0;
+}
+.comic .container {
+  width: 65%;
+  margin: 0px auto;
+}
+.comic .container .poster {
+  margin-top: -300px;
+}
+.comic .container .row {
+  display: flex;
+  padding-top: 30px;
+}
+.comic .container .row .description {
+  padding: 20px 0;
+}
+.comic .container .row .description h2 {
+  color: #000;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+.comic .container .row .description .price-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #55ba59;
+  border: 1px solid #000;
+  color: #fff;
+  padding-right: 10px;
+}
+.comic .container .row .description .price-box .price {
+  display: flex;
+  justify-content: space-between;
+  color: #c6f5c7;
+  width: 70%;
+  border-right: 1px solid #000;
+  padding: 10px;
+}
+.comic .container .row .description .price-box .price span {
+  color: #fff;
+}
+.comic .container .row .description p {
+  padding: 10px 0;
+  line-height: 1.5em;
+  color: rgb(85, 83, 83);
+}
+.comic .container .row .advertisement {
+  padding-left: 10px;
+}
+.comic .container .row .advertisement h4 {
+  text-transform: uppercase;
+  text-align: end;
+  color: rgb(85, 83, 83);
+}
